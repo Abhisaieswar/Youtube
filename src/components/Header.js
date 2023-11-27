@@ -114,7 +114,7 @@ const Header = () => {
             />
             {/* TODO - add tooltip for search icon */}
             <div className="border-l-2 border-gray-600 justify-center items-center sm:w-14 w-8 p-2 flex">
-              <AiOutlineSearch size={18} fill="white" />
+              <AiOutlineSearch size={18} fill="white" onClick={()=>handleSearchClick()} className="cursor-pointer"/>
             </div>
           </div>
           {showSuggestions && suggestions.length !== 0 && (
